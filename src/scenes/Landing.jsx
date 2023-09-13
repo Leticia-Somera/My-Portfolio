@@ -2,6 +2,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import profileImage from "../assets/profileImage.png";
+import profileImage3 from "../assets/profileImage3.png";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Landing = ({ setSelectedPage }) => {
@@ -10,29 +11,29 @@ const Landing = ({ setSelectedPage }) => {
     return (
         <section 
             id="home" 
-            className="md:flex md:justify-between md:items-center gap-16 py-10 "
+            className="md:flex md:justify-between md:items-center gap-16 py-10"
         >
             {/* IMAGE SECTION */}
-            <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
+            <div className="md:order-2  basis-3/6 z-10 mt-16 md:mt-32">
                 {isAboveMediumScreens ? (
-                    <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
+                    <div className="relative flex justify-center z-0 ml-20 before:absolute before:-top-10 before:left-5 before:rounded-t-[400px] before:w-full before:max-w-[300px] before:h-full before:border-2 before:border-blue before:z-[-1]">
                         <img 
                             alt="profile"
-                            src={profileImage}
-                            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+                            src={profileImage3}
+                            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-4/6 max-w-[400px] md:max-w-[600px] "
                         />
                     </div>
                 ) : (
                         <img 
                             alt="profile"
-                            src={profileImage}
-                            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+                            src={profileImage3}
+                            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-3/4 max-w-[400px] md:max-w-[600px]"
                         />
                 )}
             </div>
 
             {/* MAIN SECTION */}
-            <div className="z-30 basis-2/5 mt-12 md:mt-32">
+            <div className="z-30 basis-3/6 mt-12 md:mt-32">
                 {/* HEADINGS */}
                 <motion.div
                     initial="hidden"
@@ -46,13 +47,13 @@ const Landing = ({ setSelectedPage }) => {
                 >
                     <p className="text-6xl font-playfair z-10 text-center md:text-start">
                         Leticia {""}
-                        <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">
+                        <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[80px] before:z-[-1]">
                             Somera
                         </span>
                     </p>
 
                     <p className="mt-10 mb-7 text-sm text-center md:text-start">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et doloribus sunt debitis quasi aperiam voluptates libero inventore veniam iusto, nemo suscipit expedita similique ullam ipsam, quis voluptatum nulla magnam corporis.
+                    I am a physicist and materials engineer who recently joined the IT world as a Front End Developer. I look for opportunities that represent new challenges for me and that promote training and professional growth. I am committed to my work and enjoy participating in multidisciplinary teams.
                     </p>
                 </motion.div>
 

@@ -2,7 +2,7 @@ import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 import project1 from "../assets/project1.jpeg";
 import project2 from "../assets/project2.jpeg";
-import project3 from "../assets/project3.png";
+import project3 from "../assets/project3.jpeg";
 import project4 from "../assets/project4.jpeg";
 import project5 from "../assets/project5.jpeg";
 import project6 from "../assets/project6.jpeg";
@@ -38,8 +38,10 @@ const Project = ({ title }) => {
 }
 
 const Projects = () => {
+    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`
+
     return (
-        <section id="projects" className="pt-48 pb-48">
+        <section id="projects" className="pt-32 pb-48">
             {/* HEADINGS */}
             <motion.div
                 className="md:w-2/4 mx-auto text-center"
@@ -80,17 +82,51 @@ const Projects = () => {
                     <div className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] font-playfair font-semibold text-2xl ">
                     BEAUTIFUL USER INTERFACES
                     </div>
-                    <Project title="Project 1"/>
-                    <Project title="Project 2"/>
+                    {/* <Project title='project1'/> */}
+                    <motion.div
+                        variants={projectVariant} 
+                        className="relative"
+                    >
+                        <div className={overlayStyles}>
+                            <p className="text-2xl font-playfair">Project 1</p>
+                            <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
+                        </div>
+                        <img src={project1} alt={project1} />
+                    </motion.div>
+
+                    <motion.div
+                        variants={projectVariant} 
+                        className="relative"
+                    >
+                        <div className={overlayStyles}>
+                            <p className="text-2xl font-playfair">Project 2</p>
+                            <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
+                        </div>
+                        <img src={project2} alt={project2} />
+                    </motion.div>
 
                     {/* ROW 2 */}
-                    <Project title="Project 3"/>
-                    <Project title="Project 4"/>
-                    <Project title="Project 5"/>
-
-                    {/* ROW 3 */}
-                    <Project title="Project 6"/>
-                    <Project title="Project 7"/>
+                    <motion.div
+                        variants={projectVariant} 
+                        className="relative"
+                    >
+                        <div className={overlayStyles}>
+                            <p className="text-2xl font-playfair">Project 3</p>
+                            <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
+                        </div>
+                        <img src={project3} alt={project3} />
+                    </motion.div>
+                    
+                    <motion.div
+                        variants={projectVariant} 
+                        className="relative"
+                    >
+                        <div className={overlayStyles}>
+                            <p className="text-2xl font-playfair">Project 4</p>
+                            <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
+                        </div>
+                        <img src={project4} alt={project4} />
+                    </motion.div>
                     <div className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] font-playfair font-semibold text-2xl ">
                     SMOOTH USER EXPERIENCE
                     </div>
