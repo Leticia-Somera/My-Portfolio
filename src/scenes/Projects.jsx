@@ -1,12 +1,9 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import project1 from "../assets/project1.jpeg";
-import project2 from "../assets/project2.jpeg";
-import project3 from "../assets/project3.jpeg";
-import project4 from "../assets/project4.jpeg";
-import project5 from "../assets/project5.jpeg";
-import project6 from "../assets/project6.jpeg";
-import project7 from "../assets/project7.jpeg";
+import myproject1 from "../assets/myproject1.png";
+import myproject2 from "../assets/myproject2.png";
+import myproject33 from "../assets/myproject33.png";
+import myproject4 from "../assets/myproject4.png";
 
 const container = {
     hidden: {},
@@ -31,7 +28,7 @@ const Project = ({ title }) => {
                 <p className="text-2xl font-playfair">{title}</p>
                 <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
             </div>
-            <img src={project7} alt={projectTitle} />
+            <img src={myproject1} alt={projectTitle} />
             
         </motion.div>
     )
@@ -64,7 +61,7 @@ const Projects = () => {
                 </div>
 
                 <p className="mt-10 mb-10">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit quibusdam aliquam recusandae iure veritatis deleniti iusto aperiam odit cupiditate eaque, tempora repudiandae temporibus perspiciatis ipsam dolorem nesciunt magnam rem?
+                I invite you to learn a little about my work and the projects in which I have participated
                 </p>
             </motion.div>
 
@@ -88,10 +85,10 @@ const Projects = () => {
                         className="relative"
                     >
                         <div className={overlayStyles}>
-                            <p className="text-2xl font-playfair">Project 1</p>
-                            <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
+                            <p className="text-2xl font-playfair">Admin Dashboard</p>
+                            <p className="mt-7">Simulation of an interface for an admin dashboard with ReactJS.</p>
                         </div>
-                        <img src={project1} alt={project1} />
+                        <img src={myproject1} alt="myproject1" />
                     </motion.div>
 
                     <motion.div
@@ -99,10 +96,10 @@ const Projects = () => {
                         className="relative"
                     >
                         <div className={overlayStyles}>
-                            <p className="text-2xl font-playfair">Project 2</p>
-                            <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
+                            <p className="text-2xl font-playfair">Kitty Cakes</p>
+                            <p className="mt-7">Web page application offering cupcakes and kitten related products.</p>
                         </div>
-                        <img src={project2} alt={project2} />
+                        <img src={myproject4} alt="myproject4" />
                     </motion.div>
 
                     {/* ROW 2 */}
@@ -111,22 +108,24 @@ const Projects = () => {
                         className="relative"
                     >
                         <div className={overlayStyles}>
-                            <p className="text-2xl font-playfair">Project 3</p>
-                            <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
+                            <p className="text-2xl font-playfair">Furniture Store</p>
+                            <p className="mt-7">Simulation of a landing page for a furniture store.</p>
                         </div>
-                        <img src={project3} alt={project3} />
+                        <img src={myproject33} alt="myproject3" />
                     </motion.div>
-                    
+
                     <motion.div
                         variants={projectVariant} 
                         className="relative"
                     >
                         <div className={overlayStyles}>
-                            <p className="text-2xl font-playfair">Project 4</p>
-                            <p className="mt-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi dicta facere et quaerat est temporibus, praesentium.</p>
+                            <p className="text-2xl font-playfair">Hexafood</p>
+                            <p className="mt-7">Food Delivery Application with an order management system using an API Rest.</p>
                         </div>
-                        <img src={project4} alt={project4} />
+                        <img src={myproject2} alt="myproject2" />
                     </motion.div>
+                    
+                   
                     <div className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] font-playfair font-semibold text-2xl ">
                     SMOOTH USER EXPERIENCE
                     </div>

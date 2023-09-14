@@ -1,7 +1,9 @@
 import linkedin from "../assets/linkedin.png";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import instagram from "../assets/instagram.png";
-
+import { 
+    FaGithub
+} from 'react-icons/fa';
 
 const SocialMediaIcons = () => { 
     return (
@@ -24,7 +26,7 @@ const SocialMediaIcons = () => {
                 target="_blank"
                 rel="noreferrer"
             >
-                <GitHubIcon className="h-8"/>
+               <FaGithub size="2rem"  />
             </a>
             <a 
                 className="hover:opacity-50 transition duration-500"
