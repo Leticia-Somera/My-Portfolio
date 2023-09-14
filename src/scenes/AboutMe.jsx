@@ -1,17 +1,17 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import skillsImage from "../assets/skillsImage.png";
+import aboutImage from "../assets/aboutImage.png";
 
-const Experience = () => {
+const AboutMe = () => {
     const isAboveMeduimScreens = useMediaQuery("(min-width: 1060px)");
 
     return (
-        <section id="skills" className="pt-10 pb-24">
+        <section id="about" className="pt-10 pb-24">
             {/* HEADER AND IMAGE SECTION */}
-            <div className="md:flex md:justify-between md_gap-16 mt-32">
+            <div className="md:flex md:justify-between md:gap-16 mt-32">
                 <motion.div
-                    className="md:w-1/3"
+                    className="md:w-1/2"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount:0.5 }}
@@ -22,11 +22,11 @@ const Experience = () => {
                     }}
                 >
                     <p className="font-playfair font-semibold text-4xl mb-5">
-                        MY <span className="text-red">SKILLS</span>
+                        ABOUT <span className="text-red">ME</span>
                     </p>
                     <LineGradient width="w-1/3"/>
                     <p className="mt-10 mb-7">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum impedit quibusdam aliquam recusandae iure veritatis deleniti iusto aperiam odit cupiditate eaque, tempora repudiandae temporibus perspiciatis ipsam dolorem nesciunt magnam rem?
+                    Hi! My name is Leticia and I am looking for new professional challenges. I like to be committed to my work, I like to explore continuous improvements for the processes in which I am involved and I enjoy participating in multidisciplinary teams because you can always learn something new from your colleagues! This is a little about my professional career.
                     </p>
                 </motion.div>
 
@@ -35,14 +35,13 @@ const Experience = () => {
                         <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]">
                             <img 
                                 alt="skills"
-                                // src={skillsImage}
-                                src='https://images.unsplash.com/photo-1598662779094-110c2bad80b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60'
+                                src={aboutImage}
                             />
                         </div>
                     ) : (
                             <img 
                                 alt="skills"
-                                src={skillsImage}
+                                src={aboutImage}
                                 className="z-10"
                             />
                     )}
@@ -66,12 +65,12 @@ const Experience = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">01</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Experience</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Education</p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, aut cumque recusandae culpa tempore nihil est incidunt fuga corrupti at non, illum adipisci animi veniam doloremque blanditiis, accusamus similique rerum.
+                    I studied a bachelor's degree in physics in the State of Mexico, after which I graduated from a master's degree in materials science at the UNAM, in CDMX.
                     </p>
                 </motion.div>
 
@@ -90,12 +89,12 @@ const Experience = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">02</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Innovative</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Radiological Safety</p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, aut cumque recusandae culpa tempore nihil est incidunt fuga corrupti at non, illum adipisci animi veniam doloremque blanditiis, accusamus similique rerum.
+                    I have more than five years of experience as a radiation safety consultant and instructor. I have worked for hospitals and industries throughout Mexico.
                     </p>
                 </motion.div>
 
@@ -114,12 +113,12 @@ const Experience = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">03</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Experience</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Front End Developer</p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, aut cumque recusandae culpa tempore nihil est incidunt fuga corrupti at non, illum adipisci animi veniam doloremque blanditiis, accusamus similique rerum.
+                    In 2022 I joined the IT world, where I have had the opportunity to work as a Front End Developer with incredible teams on really cool projects. I really love this new stage of my professional path!
                     </p>
                 </motion.div>
             </div>
@@ -128,4 +127,4 @@ const Experience = () => {
     )
 }
 
-export default Experience;
+export default AboutMe;

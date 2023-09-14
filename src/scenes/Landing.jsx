@@ -1,7 +1,6 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import profileImage from "../assets/profileImage.png";
 import profileImage3 from "../assets/profileImage3.png";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
@@ -14,7 +13,7 @@ const Landing = ({ setSelectedPage }) => {
             className="md:flex md:justify-between md:items-center gap-16 py-10"
         >
             {/* IMAGE SECTION */}
-            <div className="md:order-2  basis-3/6 z-10 mt-16 md:mt-32">
+            <div className="md:order-2  basis-3/6 z-10 mt-20 md:mt-32">
                 {isAboveMediumScreens ? (
                     <div className="relative flex justify-center z-0 ml-20 before:absolute before:-top-10 before:left-5 before:rounded-t-[400px] before:w-full before:max-w-[300px] before:h-full before:border-2 before:border-blue before:z-[-1]">
                         <img 
@@ -24,16 +23,18 @@ const Landing = ({ setSelectedPage }) => {
                         />
                     </div>
                 ) : (
+                    <div className="flex justify-center">
                         <img 
                             alt="profile"
                             src={profileImage3}
-                            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-3/4 max-w-[400px] md:max-w-[600px]"
+                            className="hover:filter hover:saturate-150 transition duration-500 z-10 w-4/6 max-w-[400px] md:max-w-[600px] "
                         />
+                    </div>
                 )}
             </div>
 
             {/* MAIN SECTION */}
-            <div className="z-30 basis-3/6 mt-12 md:mt-32">
+            <div className="z-30 basis-3/6 mt-16 md:mt-32">
                 {/* HEADINGS */}
                 <motion.div
                     initial="hidden"

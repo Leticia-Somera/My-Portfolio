@@ -1,7 +1,8 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import contactImage from "../assets/contactImage.jpeg";
+import contactImage from "../assets/contactImage.png";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Contact = () => {
     const {
@@ -127,10 +128,11 @@ const Contact = () => {
 
                     <button
                     type="submit"
-                    className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+                    className="p-4 bg-yellow font-semibold text-deep-blue mt-4 hover:bg-red hover:text-white transition duration-500"
                     >
                         SEND ME A MESSAGE
                     </button>
+                    <SocialMediaIcons  className="transition duration-500"/>
                 </form>
             </motion.div>
             </div>
