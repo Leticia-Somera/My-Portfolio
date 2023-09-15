@@ -97,7 +97,7 @@ const Projects = () => {
                     >
                         <div className={overlayStyles}>
                             <p className="text-2xl font-playfair">Kitty Cakes</p>
-                            <p className="mt-7">Web page application offering cupcakes and kitten related products.</p>
+                            <p className="mt-7">Website offering cupcakes and kitten related products using CSS and Bootstrap.</p>
                         </div>
                         <img src={myproject4} alt="myproject4" />
                     </motion.div>
@@ -109,7 +109,7 @@ const Projects = () => {
                     >
                         <div className={overlayStyles}>
                             <p className="text-2xl font-playfair">Furniture Store</p>
-                            <p className="mt-7">Simulation of a landing page for a furniture store.</p>
+                            <p className="mt-7">Simulation of a landing page for a furniture store with CSS.</p>
                         </div>
                         <img src={myproject33} alt="myproject3" />
                     </motion.div>

@@ -50,13 +50,14 @@ const AboutMe = () => {
 
             {/* SKILLS */}
             <div className="md:flex md:justify-between mt-16 gap-32">
-                {/* EXPERIENCE */}
+
+                {/* DEV */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount:0.5 }}
-                    transition={{ duration:0.5 }}
+                    transition={{ delay:0.4, duration:0.5 }}
                     variants={{
                         hidden: { opacity:0, y:-50 },
                         visible: { opacity:1, y:0 }
@@ -65,16 +66,16 @@ const AboutMe = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">01</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Education</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Front End Developer</p>
                         </div>
-                        <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+                        <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                    I studied a bachelor's degree in physics in the State of Mexico, after which I graduated from a master's degree in materials science at the UNAM, in CDMX.
+                    In 2022 I joined the IT world, where I have had the opportunity to work as a Front End Developer with incredible teams on really cool projects. I really love this new stage of my professional path!
                     </p>
                 </motion.div>
 
-                {/* INNOVATIVE */}
+                {/* RADIOLOGICAL SAFETY */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
@@ -94,17 +95,17 @@ const AboutMe = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                    I have more than five years of experience as a radiation safety consultant and instructor. I have worked for hospitals and industries throughout Mexico.
+                    I have more than five years of experience as a radiation safety consultant and instructor. I have worked for hospitals and industries throughout México.
                     </p>
                 </motion.div>
-
-                {/* IMAGINATIVE */}
+              
+                {/* EDUCATION */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount:0.5 }}
-                    transition={{ delay:0.4, duration:0.5 }}
+                    transition={{ duration:0.5 }}
                     variants={{
                         hidden: { opacity:0, y:-50 },
                         visible: { opacity:1, y:0 }
@@ -113,14 +114,15 @@ const AboutMe = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">03</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Front End Developer</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Education</p>
                         </div>
-                        <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+                        <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                    In 2022 I joined the IT world, where I have had the opportunity to work as a Front End Developer with incredible teams on really cool projects. I really love this new stage of my professional path!
+                    I studied a bachelor's degree in physics in the State of Mexico, after which I graduated from a master's degree in materials science at the UNAM, in CDMX.
                     </p>
                 </motion.div>
+
             </div>
 
         </section>
