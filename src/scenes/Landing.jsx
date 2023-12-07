@@ -8,10 +8,10 @@ const Landing = ({ setSelectedPage }) => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
     const handleDownload = () => {
-        const pdfUrl = '/RESUME_LETICIA_SOMERA.pdf';
+        const pdfUrl = '/RESUME_LETICIA.pdf';
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = 'RESUME_LETICIA_SOMERA.pdf'; // Nombre del archivo que se descargará
+        link.download = 'RESUME_LETICIA.pdf'; // Nombre del archivo que se descargará
         link.click();
       };
 
